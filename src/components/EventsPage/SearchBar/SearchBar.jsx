@@ -1,7 +1,35 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import ListOfCategories from "../ListOfCategories/ListOfCategories";
 import "./SearchBar.css";
 
 function SearchBar() {
+  const [categories, setCategories] = useState("");
+
+  useEffect(() => {
+    window.addEventListener("keydown", (e) => {
+      const inputField = document.getElementById("searchbar-input");
+      const keyCode = e.key;
+      if (
+        keyCode === "Enter" &&
+        inputField == document.activeElement &&
+        inputField.value !== ""
+      ) {
+        if (categories === "") {
+          console.log(inputField.value);
+          setCategories([<p>{inputField.value}</p>]);
+        } else {
+          const newCat = [...categories, <p>{inputField.value}</p>];
+          console.log(newCat);
+          setCategories(newCat);
+        }
+        // console.log([...categories, <p>{inputField.value}</p>]);
+        // setCategories([...categories, <p>{inputField.value}</p>]);
+        inputField.value = "";
+      }
+    });
+  }, []);
+
   return (
     <div
       className="fixed flex bg-black w-screen text-white"
@@ -22,6 +50,8 @@ function SearchBar() {
           />
           <button className="" id="search-button"></button>
         </div>
+
+        <ListOfCategories>{categories}</ListOfCategories>
       </div>
       <div className="p-4">
         <NavLink to={"/"} className="text-4xl">
@@ -31,18 +61,5 @@ function SearchBar() {
     </div>
   );
 }
-
-window.addEventListener("keydown", (e) => {
-  const inputField = document.getElementById("searchbar-input");
-  const keyCode = e.key;
-  if (keyCode === "Enter" && inputField == document.activeElement) {
-    console.log("Enter key pressed");
-    const inputField = document.getElementById("searchbar-input");
-    const newTag = inputField.value;
-    inputField.value = "";
-
-    console.log('newTag :>> ', newTag);
-  }
-});
 
 export default SearchBar;
