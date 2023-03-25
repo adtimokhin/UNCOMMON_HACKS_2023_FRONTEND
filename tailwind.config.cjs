@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         primary: ["Comfortaa", "cursive", "sans-serif"],
       },
+
+      colors:{
+        background: "#EBDBD3"
+      }
     },
   },
   plugins: [],

@@ -56,7 +56,7 @@ function CardScroller(props) {
     window.ontouchmove = (e) => handleOnMove(e.touches[0]);
   }, []);
   return (
-    <div id="container-outer">
+    <div id="container-outer" className="w-screen bg-background">
       <div
         className="flex align-middle w-fit"
         id="card__scroller-container"
