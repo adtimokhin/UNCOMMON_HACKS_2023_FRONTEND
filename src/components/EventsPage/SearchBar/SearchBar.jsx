@@ -21,6 +21,7 @@ function SearchBar() {
         } else {
           const newCat = [...categories, <p>{inputField.value}</p>];
           console.log(newCat);
+          console.log(categories);
           setCategories(newCat);
         }
         // console.log([...categories, <p>{inputField.value}</p>]);
@@ -32,7 +33,7 @@ function SearchBar() {
 
   return (
     <div
-      className="fixed flex bg-black w-screen text-white"
+      className="fixed flex bg-black w-screen text-white z-50 shadow-xl"
       style={{ justifyContent: "space-between" }}
     >
       <div className="p-4">
@@ -40,7 +41,7 @@ function SearchBar() {
       </div>
       <div className="p-4">
         <div
-          className="w-fit searchbar rounded-md border-red-700 border-2 block"
+          className="w-fit searchbar rounded-md border-red-700 border-2 block p-4"
           id="searchbar"
         >
           <input
