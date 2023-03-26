@@ -4,12 +4,12 @@ import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 // import { } from 'firebase/<service>';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAEZpxLF5nEn9r1b3-Xx8kKsnq4pm0J_kU",
-  authDomain: "uncommon-hacks-2023.firebaseapp.com",
-  projectId: "uncommon-hacks-2023",
-  storageBucket: "uncommon-hacks-2023.appspot.com",
-  messagingSenderId: "462640014263",
-  appId: "1:462640014263:web:c3fcea0b80fa6f88c83e32"
+  apiKey: "AIzaSyDGeDems4Em1ydyhTx2zEAvK5R7ONfThLQ",
+  authDomain: "events-4e304.firebaseapp.com",
+  projectId: "events-4e304",
+  storageBucket: "events-4e304.appspot.com",
+  messagingSenderId: "878230429229",
+  appId: "1:878230429229:web:8c09cec45b162873ca22a4"
 };
 
 const app = initializeApp(firebaseConfig);
