@@ -1,3 +1,5 @@
 #How to run the code
 
-      `npm run dev`
+Run this command in the root directory:
+
+      npm run dev
