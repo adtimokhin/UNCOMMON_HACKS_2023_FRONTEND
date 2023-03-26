@@ -1,39 +1,36 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import CategoryTag from "../CategoryTag/CategoryTag";
 import ListOfCategories from "../ListOfCategories/ListOfCategories";
+
 import "./SearchBar.css";
 
 function SearchBar() {
-  const [categories, setCategories] = useState("");
+  const [categories, setCategories] = useState([]);
+
+  const eventListener = (e) => {
+    const inputField = document.getElementById("searchbar-input");
+    const keyCode = e.key;
+    if (
+      keyCode === "Enter" &&
+      inputField == document.activeElement &&
+      inputField.value !== ""
+    ) {
+      // If there is a text that can be turned into a tag:
+      const tagName = inputField.value;
+    //   inputField.value = "";
+      CategoryTag;
+      setCategories([...categories, <CategoryTag tagName={tagName} />]);
+    }
+  };
 
   useEffect(() => {
-    window.addEventListener("keydown", (e) => {
-      const inputField = document.getElementById("searchbar-input");
-      const keyCode = e.key;
-      if (
-        keyCode === "Enter" &&
-        inputField == document.activeElement &&
-        inputField.value !== ""
-      ) {
-        if (categories === "") {
-          console.log(inputField.value);
-          setCategories([<p>{inputField.value}</p>]);
-        } else {
-          const newCat = [...categories, <p>{inputField.value}</p>];
-          console.log(newCat);
-          console.log(categories);
-          setCategories(newCat);
-        }
-        // console.log([...categories, <p>{inputField.value}</p>]);
-        // setCategories([...categories, <p>{inputField.value}</p>]);
-        inputField.value = "";
-      }
-    });
-  }, []);
+    window.addEventListener("keydown", eventListener);
+  }, [categories]);
 
   return (
     <div
-      className="fixed flex bg-black w-screen text-white z-50 shadow-xl"
+      className="fixed flex bg-black w-screen text-white z-[100] shadow-xl"
       style={{ justifyContent: "space-between" }}
     >
       <div className="p-4">
@@ -49,7 +46,7 @@ function SearchBar() {
             className="outline-none text-slate-400 bg-transparent w-[60vw]"
             id="searchbar-input"
           />
-          <button className="" id="search-button"></button>
+          <button className="" id="search-button" onClick={() => {console.log("Button clicked");}}></button>
         </div>
 
         <ListOfCategories>{categories}</ListOfCategories>
