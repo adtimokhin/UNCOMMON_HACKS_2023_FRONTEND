@@ -8,15 +8,16 @@
         "time": "02:00 PM"
     },
     {
-        "Category": "Computer Science",
+        "Category": "Uncommon Hacks",
         "__id__": "AL2aUM0PAeN6Ke1tRxPF",
         "date": "03/14/2022",
         "imageUrl": "https://github.com/adtimokhin/UNCOMMON_HACKS_2023_BACKEND/blob/main/eventPosters/event10.jpg",
-        "location": "Chicago",
-        "time": "10:00 AM"
+        "location": "Madel Hall",
+        "time": "10:00 AM",
+        "description": "🎉 Get ready for an unforgettable experience at Uncommon Hacks, the most extraordinary hackathon at UChicago! 🚀\n\nTaking place in the heart of the prestigious University of Chicago campus, Uncommon Hacks is a one-of-a-kind, 48-hour marathon of innovation, creativity, and technology. This event is custom-tailored for trailblazers, pioneers, and mavericks who dare to think outside the box and turn the wildest of ideas into reality. 💡\n\nAt Uncommon Hacks, you will:\n👥 Network with a diverse and brilliant community of fellow hackers, tech enthusiasts, and industry professionals.\n🧠 Expand your skillset through interactive workshops and mentorship from leading experts in various fields.\n🏆 Compete for amazing prizes and bragging rights as you showcase your groundbreaking projects to a panel of distinguished judges.\n🌟 Gain inspiration from keynote speakers who have made their mark in the technology industry and beyond.\n🍕 Enjoy non-stop sustenance, fun, and camaraderie with your fellow participants throughout the entire weekend.\n\nCome join us at Uncommon Hacks, and embark on a thrilling adventure that will challenge you to push the boundaries of what's possible. Whether you're a seasoned hacker, a coding novice, or simply curious about the tech world, there's something for everyone at this electrifying event! 🌐\n\nDon't miss out on this unique opportunity to unleash your inner innovator and make lasting memories at UChicago's Uncommon Hacks! Register now and let the magic begin. ✨"
     },
     {
-        "Category": "Computer Science",
+        "Category": "d Science",
         "__id__": "F1uNiQ1FF4AwLE5UXQXM",
         "date": "04/29/2023",
         "imageUrl": "https://github.com/adtimokhin/UNCOMMON_HACKS_2023_BACKEND/blob/main/eventPosters/event2.jpg",
