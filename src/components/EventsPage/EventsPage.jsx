@@ -11,7 +11,7 @@ function EventsPage() {
       {/* Search Bar */}
       {popupCard}
       <SearchBar />
-      <div className="p-8">mmf</div>
+      <div className="p-32 text-[#EBDBD3]">mmf</div>
       <CardRow
         onCardClick={(data) => {
           // TODO: pass the data later
