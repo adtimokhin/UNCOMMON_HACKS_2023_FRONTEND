@@ -1,7 +1,12 @@
 import React from "react";
 import "./PopupCard.css";
 
-const PopupCard = (props) => {
+function PopupCard(props) {
+  // {
+  // title: "Card 5",
+  // location: "Location 4",
+  // imageURL: "https://via.placeholder.com/400x300",
+  // }
   return (
     <div className="absolute h-[100%] w-screen">
       <div
@@ -18,7 +23,7 @@ const PopupCard = (props) => {
       >
         <img
           className="w-full h-[50%] object-fit absolute"
-          src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80"
+          src={props.cardData.imageURL}
           alt="popup card image"
         />
 
@@ -32,7 +37,7 @@ const PopupCard = (props) => {
             className="p-10 text-3xl font-bold"
             style={{ transform: "translateY(-40%)" }}
           >
-            Uncommon Hacks 2023
+            {props.cardData.title}
           </h3>
 
           <p className="pl-6">
@@ -42,7 +47,7 @@ const PopupCard = (props) => {
             <span>Time:</span> Sat 09am - Sun 10am
           </p>
           <p className="pl-6">
-            <span>Location:</span> Uchicago
+            <span>Location:</span> {props.cardData.location}
           </p>
 
           <p className="w-full p-4">
