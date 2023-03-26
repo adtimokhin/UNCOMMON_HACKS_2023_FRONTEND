@@ -3,13 +3,17 @@ import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
 
-// TODO: Replace the following with your app's Firebase project configuration
-// const firebaseConfig = {
-//   //...
-// };
+const firebaseConfig = {
+  apiKey: "AIzaSyAEZpxLF5nEn9r1b3-Xx8kKsnq4pm0J_kU",
+  authDomain: "uncommon-hacks-2023.firebaseapp.com",
+  projectId: "uncommon-hacks-2023",
+  storageBucket: "uncommon-hacks-2023.appspot.com",
+  messagingSenderId: "462640014263",
+  appId: "1:462640014263:web:c3fcea0b80fa6f88c83e32"
+};
 
-// const app = initializeApp(firebaseConfig);
-// const db = getFirestore(app);
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
 
 // Get a list of cities from your database
 export async function getEventById() {}
