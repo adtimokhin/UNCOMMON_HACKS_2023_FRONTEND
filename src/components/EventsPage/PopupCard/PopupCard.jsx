@@ -41,10 +41,10 @@ function PopupCard(props) {
           </h3>
 
           <p className="pl-6">
-            <span>Date:</span> 23/03/2023
+            <span>Date:</span> {props.cardData.date}
           </p>
           <p className="pl-6">
-            <span>Time:</span> Sat 09am - Sun 10am
+            <span>Time:</span> {props.cardData.time}
           </p>
           <p className="pl-6">
             <span>Location:</span> {props.cardData.location}
@@ -79,6 +79,6 @@ function PopupCard(props) {
       </div>
     </div>
   );
-};
+}
 
 export default PopupCard;

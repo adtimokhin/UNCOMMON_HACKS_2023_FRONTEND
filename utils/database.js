@@ -22,39 +22,70 @@ export async function getEventById() {}
 export async function getAllEventsByCategories(categories) {}
 
 export function getAllEvents() {
-
-
   return [
     {
-      title: "Card 1",
-      location: "Location 1",
-      imageUrl:
-        "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
+      title: "Physics",
+      __id__: "8ktxWPWjRpBDC7kxMaQx",
+      date: "06/30/2023",
+      imageUrl: "/eventPosters/event5.jpg",
+      location: "Chicago",
+      time: "02:00 PM",
     },
     {
-      title: "Card 2",
-      location: "Location 2",
-      imageUrl: "https://via.placeholder.com/400x300",
+      title: "Computer Science",
+      __id__: "AL2aUM0PAeN6Ke1tRxPF",
+      date: "03/14/2022",
+      imageUrl: "/eventPosters/event10.jpg",
+      location: "Chicago",
+      time: "10:00 AM",
     },
     {
-      title: "Card 3",
-      location: "Location 3",
-      imageUrl: "https://via.placeholder.com/400x300",
+      title: "Computer Science",
+      __id__: "F1uNiQ1FF4AwLE5UXQXM",
+      date: "04/29/2023",
+      imageUrl: "/eventPosters/event2.jpg",
+      location: "Wisconsin",
+      time: "10:00 AM",
     },
     {
-      title: "Card 4",
-      location: "Location 4",
-      imageUrl: "https://via.placeholder.com/400x300",
+      title: "Film",
+      __id__: "Lh7VcpYZu9WOaESbQ6Rp",
+      date: "03/30/2023",
+      imageUrl: "/eventPosters/event1.jpg",
+      location: "Chicago",
+      time: "11:00 AM",
     },
     {
-      title: "Card 5",
-      location: "Location 4",
-      imageUrl: "https://via.placeholder.com/400x300",
+      title: "Computer Science",
+      __id__: "P6DpzZGEKhT60lOq0Wbp",
+      date: "03/31/2023",
+      imageUrl: "/eventPosters/event6.jpg",
+      location: "Indiana",
+      time: "02:00 PM",
     },
     {
-      title: "Card 6",
-      location: "Location 4",
-      imageUrl: "https://via.placeholder.com/400x300",
+      title: "Art",
+      __id__: "TRwUffYzJwkyzl4n7YWR",
+      date: "07/15/2023",
+      imageUrl: "/eventPosters/event7.jpg",
+      location: "Chicago",
+      time: "03:00 PM",
+    },
+    {
+      title: "Economics",
+      __id__: "X7gZsNhtgGEI4jhWiNVS",
+      date: "04/30/2023",
+      imageUrl: "/eventPosters/event3.jpg",
+      location: "Chicago",
+      time: "09:30 AM",
+    },
+    {
+      title: "Art",
+      __id__: "w4qly2FKkaHmssT1EV7W",
+      date: "05/01/2023",
+      imageUrl: "/eventPosters/event4.jpg",
+      location: "Indiana",
+      time: "10:00 AM",
     },
   ];
 }
