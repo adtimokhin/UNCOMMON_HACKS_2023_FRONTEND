@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
+import { getFirestore } from "firebase/firestore/lite";
+import { collection, query, where, getDocs } from "firebase/firestore";
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
 
@@ -9,7 +10,7 @@ const firebaseConfig = {
   projectId: "events-4e304",
   storageBucket: "events-4e304.appspot.com",
   messagingSenderId: "878230429229",
-  appId: "1:878230429229:web:8c09cec45b162873ca22a4"
+  appId: "1:878230429229:web:8c09cec45b162873ca22a4",
 };
 
 const app = initializeApp(firebaseConfig);
@@ -21,37 +22,45 @@ export async function getEventById() {}
 export async function getAllEventsByCategories(categories) {}
 
 export function getAllEvents() {
+
+  getDocs(collection(db, "events")).then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+      // doc.data() is never undefined for query doc snapshots
+      console.log(doc.id, " => ", doc.data());
+    });
+  });
+
   return [
     {
       title: "Card 1",
       location: "Location 1",
-      imageURL:
+      imageUrl:
         "https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80",
     },
     {
       title: "Card 2",
       location: "Location 2",
-      imageURL: "https://via.placeholder.com/400x300",
+      imageUrl: "https://via.placeholder.com/400x300",
     },
     {
       title: "Card 3",
       location: "Location 3",
-      imageURL: "https://via.placeholder.com/400x300",
+      imageUrl: "https://via.placeholder.com/400x300",
     },
     {
       title: "Card 4",
       location: "Location 4",
-      imageURL: "https://via.placeholder.com/400x300",
+      imageUrl: "https://via.placeholder.com/400x300",
     },
     {
       title: "Card 5",
       location: "Location 4",
-      imageURL: "https://via.placeholder.com/400x300",
+      imageUrl: "https://via.placeholder.com/400x300",
     },
     {
       title: "Card 6",
       location: "Location 4",
-      imageURL: "https://via.placeholder.com/400x300",
+      imageUrl: "https://via.placeholder.com/400x300",
     },
   ];
 }

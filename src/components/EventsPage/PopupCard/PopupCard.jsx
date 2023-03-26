@@ -23,7 +23,7 @@ function PopupCard(props) {
       >
         <img
           className="w-full h-[50%] object-fit absolute"
-          src={props.cardData.imageURL}
+          src={props.cardData.imageUrl}
           alt="popup card image"
         />
 

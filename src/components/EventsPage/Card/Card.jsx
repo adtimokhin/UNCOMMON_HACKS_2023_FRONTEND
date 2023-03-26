@@ -11,7 +11,7 @@ const Card = (props) => {
         props.onCardClick(cardData)
     }}>
       <img
-        src={cardData.imageURL}
+        src={cardData.imageUrl}
         alt={cardData.title}
         className="absolute h-full w-full object-cover z-0 top-0 left-0"
         draggable="false"
