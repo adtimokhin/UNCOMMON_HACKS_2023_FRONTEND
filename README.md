@@ -1,1 +1,3 @@
-This is a readme file!
+#How to run the code
+
+      `npm run dev`
