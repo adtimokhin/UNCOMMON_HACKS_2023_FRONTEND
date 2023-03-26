@@ -1,5 +1,5 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
+import { initializeApp } from "firebase/app";
+import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 // Follow this pattern to import other Firebase services
 // import { } from 'firebase/<service>';
 
@@ -12,5 +12,8 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Get a list of cities from your database
-async function getCities() {
-}
+export async function getEventById() {}
+
+export async function getAllEventsByCategories(categories) {}
+
+export async function getAllEvents() {}
